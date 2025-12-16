@@ -13,8 +13,8 @@ abstract class BaseFollowUpRemoteDataSource {
 class FollowUpRemoteDataSource extends BaseFollowUpRemoteDataSource {
   @override
   Future<Either<Failure, List<FollowUpModel>>> getFollowUp() async {
+    //TODO: to test error state change the json file to errorFollowUpsJson
     final data = await jsonDecoder(Assets.followUpsJson);
-    print(data);
     if (data['success'] == true) {
       final list = List<FollowUpModel>.from(
         data['data'].map((x) => FollowUpModel.fromJson(x)),

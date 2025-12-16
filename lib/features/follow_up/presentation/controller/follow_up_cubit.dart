@@ -15,10 +15,22 @@ class FollowUpCubit extends Cubit<FollowUpState> {
   FollowUpCubit(this.getFollowUpUseCase) : super(FollowUpState());
 
   Future<void> load() async {
+    emit(state.copyWith(status: FollowUpCubitStatus.loading));
     final result = await getFollowUpUseCase.call(NoParameters());
     result.fold(
-      (failure) => emit(state.copyWith(error: failure.message)),
-      (data) => emit(state.copyWith(all: data, filtered: data)),
+      (failure) => emit(
+        state.copyWith(
+          error: failure.message,
+          status: FollowUpCubitStatus.error,
+        ),
+      ),
+      (data) => emit(
+        state.copyWith(
+          all: data,
+          filtered: data,
+          status: FollowUpCubitStatus.loaded,
+        ),
+      ),
     );
   }
 

@@ -29,6 +29,14 @@ class FollowUpListScreen extends StatelessWidget {
       ),
       body: BlocBuilder<FollowUpCubit, FollowUpState>(
         builder: (context, state) {
+          if (state.status == FollowUpCubitStatus.loading) {
+            return const Center(child: CircularProgressIndicator());
+          }
+          if (state.status == FollowUpCubitStatus.error) {
+            return Center(
+              child: Text(state.error.toString()),
+            );
+          }
           return Column(
             children: [
               Padding(

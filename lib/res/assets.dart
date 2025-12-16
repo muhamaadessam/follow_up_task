@@ -3,5 +3,6 @@ class Assets {
   Assets._();
 
   static const String followUpsJson = 'assets/jsons/followups.json';
+  static const String errorFollowUpsJson = 'assets/jsons/error_follow_ups.json';
   static const String noDataImage = 'assets/images/no_data.png';
 }

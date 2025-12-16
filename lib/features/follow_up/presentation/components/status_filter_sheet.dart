@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../controller/follow_up_cubit.dart';
 
-
 Color statusColor(StatusFilter filter) {
   switch (filter) {
     case StatusFilter.completed:

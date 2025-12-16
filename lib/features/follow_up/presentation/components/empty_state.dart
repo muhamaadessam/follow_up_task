@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../res/assets.dart';
+
 class EmptyState extends StatelessWidget {
   const EmptyState({super.key});
 
@@ -11,7 +12,7 @@ class EmptyState extends StatelessWidget {
         children: [
           Image(image: AssetImage(Assets.noDataImage)),
           SizedBox(height: 16),
-          Text('No Follow Ups Found',style: TextStyle(fontSize: 24),),
+          Text('No Follow Ups Found', style: TextStyle(fontSize: 24)),
         ],
       ),
     );

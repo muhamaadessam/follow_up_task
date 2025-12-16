@@ -21,7 +21,7 @@ class FollowUpModel extends FollowUpEntity {
 
   static FollowUpType _parseType(String value) {
     return FollowUpType.values.firstWhere(
-          (e) => e.name.toLowerCase() == value.toLowerCase(),
+      (e) => e.name.toLowerCase() == value.toLowerCase(),
       orElse: () => FollowUpType.call,
     );
   }
@@ -31,7 +31,7 @@ class FollowUpModel extends FollowUpEntity {
       return FollowUpStatus.none;
     }
     return FollowUpStatus.values.firstWhere(
-          (e) => e.name.toLowerCase() == value.toLowerCase(),
+      (e) => e.name.toLowerCase() == value.toLowerCase(),
       orElse: () => FollowUpStatus.none,
     );
   }

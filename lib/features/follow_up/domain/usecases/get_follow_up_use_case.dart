@@ -12,8 +12,9 @@ class GetFollowUpUseCase
   GetFollowUpUseCase(this.baseFollowUpRepository);
 
   @override
-  Future<Either<Failure, List<FollowUpEntity>>> call(NoParameters parameters) async {
+  Future<Either<Failure, List<FollowUpEntity>>> call(
+    NoParameters parameters,
+  ) async {
     return await baseFollowUpRepository.getFollowUp();
   }
 }
-

@@ -1,0 +1,165 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "title": "Call customer",
+      "description": "Follow up with customer about contract",
+      "type": "call",
+      "status": "completed",
+      "customerName": "Ahmed Ali"
+    },
+    {
+      "id": 2,
+      "title": "Team meeting",
+      "description": "Weekly internal sync-up",
+      "type": "meeting",
+      "status": "scheduled",
+      "customerName": "Sara Mohamed"
+    },
+    {
+      "id": 3,
+      "title": "Client visit",
+      "description": "Visit client office for discussion",
+      "type": "visit",
+      "status": "none",
+      "customerName": "Omar Hassan"
+    },
+    {
+      "id": 4,
+      "title": "Follow up call",
+      "description": "Check customer satisfaction post-purchase",
+      "type": "call",
+      "status": "scheduled",
+      "customerName": "Mona Fathy"
+    },
+    {
+      "id": 5,
+      "title": "Project planning meeting",
+      "description": "Discuss project milestones",
+      "type": "meeting",
+      "status": "completed",
+      "customerName": "Khaled Yassin"
+    },
+    {
+      "id": 6,
+      "title": "Site visit",
+      "description": "Inspect client site",
+      "type": "visit",
+      "status": "scheduled",
+      "customerName": "Ali Nabil"
+    },
+    {
+      "id": 7,
+      "title": "Client call",
+      "description": "Call for invoice clarification",
+      "type": "call",
+      "status": "none",
+      "customerName": "Fatma Samir"
+    },
+    {
+      "id": 8,
+      "title": "Product training meeting",
+      "description": "Train client on new features",
+      "type": "meeting",
+      "status": "completed",
+      "customerName": "Hanan Farouk"
+    },
+    {
+      "id": 9,
+      "title": "Office visit",
+      "description": "Meet client for contract signing",
+      "type": "visit",
+      "status": "scheduled",
+      "customerName": "Tamer Adel"
+    },
+    {
+      "id": 10,
+      "title": "Follow up email",
+      "description": "Send reminder email",
+      "type": "call",
+      "status": "completed",
+      "customerName": "Noha Mahmoud"
+    },
+    {
+      "id": 11,
+      "title": "Strategy meeting",
+      "description": "Internal project strategy discussion",
+      "type": "meeting",
+      "status": "none",
+      "customerName": "Sara Ali"
+    },
+    {
+      "id": 12,
+      "title": "Client visit",
+      "description": "Quarterly check-in",
+      "type": "visit",
+      "status": "completed",
+      "customerName": "Omar Khaled"
+    },
+    {
+      "id": 13,
+      "title": "Follow up call",
+      "description": "Confirm meeting time",
+      "type": "call",
+      "status": "scheduled",
+      "customerName": "Mona Samir"
+    },
+    {
+      "id": 14,
+      "title": "Team meeting",
+      "description": "Sprint planning",
+      "type": "meeting",
+      "status": "completed",
+      "customerName": "Ahmed Youssef"
+    },
+    {
+      "id": 15,
+      "title": "Site visit",
+      "description": "Evaluate new site setup",
+      "type": "visit",
+      "status": "none",
+      "customerName": "Laila Fathy"
+    },
+    {
+      "id": 16,
+      "title": "Customer call",
+      "description": "Check satisfaction and feedback",
+      "type": "call",
+      "status": "scheduled",
+      "customerName": "Mohamed Samir"
+    },
+    {
+      "id": 17,
+      "title": "Project kickoff meeting",
+      "description": "Kickoff for new project",
+      "type": "meeting",
+      "status": "completed",
+      "customerName": "Khaled Hassan"
+    },
+    {
+      "id": 18,
+      "title": "Client visit",
+      "description": "Visit client for project review",
+      "type": "visit",
+      "status": "scheduled",
+      "customerName": "Fatma Ali"
+    },
+    {
+      "id": 19,
+      "title": "Follow up call",
+      "description": "Follow up on pending documents",
+      "type": "call",
+      "status": "none",
+      "customerName": null
+    },
+    {
+      "id": 20,
+      "title": "Internal meeting",
+      "description": "Discuss internal project updates",
+      "type": "meeting",
+      "status": "completed",
+      "customerName": null
+    }
+  ]
+}

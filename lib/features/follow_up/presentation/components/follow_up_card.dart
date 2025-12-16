@@ -18,6 +18,17 @@ class FollowUpCard extends StatelessWidget {
     }
   }
 
+  IconData get typeIcons {
+    switch (followUp.type) {
+      case FollowUpType.call:
+        return Icons.phone;
+      case FollowUpType.meeting:
+        return Icons.video_camera_back_outlined;
+      default:
+        return Icons.door_back_door_outlined;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -42,7 +53,13 @@ class FollowUpCard extends StatelessWidget {
               ),
           ],
         ),
-        trailing: Icon(Icons.circle, color: statusColor, size: 12),
+        trailing: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Icon(typeIcons, size: 24),
+            Icon(Icons.circle, color: statusColor, size: 12),
+          ],
+        ),
       ),
     );
   }
